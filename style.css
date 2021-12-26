@@ -74,14 +74,17 @@ nav ul li a:hover{
 }
 .homedata h1{
     font-size:45px;
-    margin:0px;
+    margin:10px;
     letter-spacing: 2px;
     color:black;
 }
 .homedata p{
+    margin: 10px;
     color:black;
 }
 .expbutton{
+    margin: 25px;
+    margin-left: 0px;
     width:120px;
     height:40px;
     display:flex;
@@ -245,6 +248,84 @@ nav ul li a:hover{
     font-weight: 300;
     line-height: 1.5em;
 }
+.partners{
+    background: blanchedalmond;
+}
+.partners h2{
+    text-align: center;
+    font-size:40px;
+    color: black;
+    padding-top: 40px;
+}
+.team{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width:100%;
+    flex-wrap: wrap;
+}
+.team .cards{
+    width:300px;
+    height: 340px;
+    padding:40px;
+    margin:20px;
+    border-radius:20px;
+}
+.team .cards:hover{
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+.team .cards .teaminfo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.team .cards .teaminfo .membimg{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.team .cards .teaminfo .membimg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team .cards .teaminfo .membinfo h4{
+    color: #36187d;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align:center;
+    letter-spacing: 1px;
+}
+.team .cards .teaminfo .membinfo h5{
+    color:#6c758f;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.team .cards .teaminfo .profiles{
+    margin-top: 20px;
+}
+.team .cards .teaminfo .profiles a{
+    text-decoration: none;
+    color:#6c758f;
+    font-size: 30px;
+    margin:10px;
+    transition:color 0.4s;
+}
+.team .cards .teaminfo .profiles a:hover{
+    color: #0196e3;
+}
+
+
 
 
 
