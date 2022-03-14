@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,246 +9,328 @@
     <title>Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/7951bd2be7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <div class="navbar">
-        <nav>
-            <a href="index.html" class="logo">
-                <img src=""/>
-            </a>
-            <ul class="options">
-                <li><a href="#" class="active">Home</li>
-                <li><a href="#">Destinations</li> 
-                <li><a href="#">Gallery</li>
-                <li><a href="#">Contact Us</li>
-                <li><a href="#">Sign Up</li>
-            </ul>
-        </nav>
+    <script src="index.js"></script>
+    <button onclick="topFunction()" id="btnscrollTotop">
+        <a href="#home"></a><i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="home">
+        <div class="navbar" id="navib">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" />
+                </a>
+                <ul class="options">
+                    <li><a href="#home" class="active" href="javascript:void(0)"><i class="fas fa-home"></i>Home</a>
+                    </li>
+                    <li><a href="#destinations" href="javascript:void(0)"><i
+                                class="fas fa-map-marker-alt"></i>Destinations</a></li>
+                    <li><a href="#services" href="javascript:void(0)">Our Services</a></li>
+                    <li><a href="#team" href="javascript:void(0)"><i class="fas fa-users"></i>Team</a></li>
+                    <li><a href="#contact" href="javascript:void(0)"><i class="fas fa-envelope"></i>Contact Us</a></li>
+                    <!-- <li><a href="#signup"><i class="fas fa-user-plus"></i>Sign Up</a></li> -->
+                    <!-- <li><a href="#"><i class="fas fa-sign-in-alt"></i></a></li> -->
+                    <!-- <li><i class="fas fa-user-plus"></i></li> -->
+                </ul>
+                <ul class="sign-in">
+                    <li><a href="signupin.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user-plus"></i></a></li>
+
+                </ul>
+            </nav>
+        </div>
         <div class="homedata">
             <h1>Book tour,Visit, Repeat!!!!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur magni nisi, delectus dolorem eaque velit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur magni nisi, delectus dolorem eaque
+                velit?</p>
             <a class="expbutton" href="#">Explore</a>
         </div>
     </div>
-    <section class="destsection">
-        <a name="Destinations"></a>
-    <div class="destination">
-        <div class="xyz">
-        <div class="div-heading">
-            <span>Handpicked Collections for You</span>
-        </div>
-        <div class="cards">
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/Beach.jpg">
+    <section class="destsection" id="destinations">
+        <div class="destination">
+            <div class="xyz">
+                <div class="div-heading">
+                    <span>Handpicked Collections for You</span>
                 </div>
-                <div class="city_title title-white">
-                    <p>Beach Destinations</p>
-                </div>
-            </div>
+                <div class="cards">
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/Beach.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Beach Destinations</p>
+                        </div>
+                    </div>
 
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/delhi.jpg">
-                </div>
-                <div class="city_title title-white">
-                    <p>Delhi</p>
-                </div>
-            </div>
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/banglore.jpg">
-                </div>
-                <div class="city_title title-white">
-                    <p>Banglore</p>
-                </div>
-            </div>
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/banglore.jpg">
-                </div>
-                <div class="city_title title-white">
-                    <p>Banglore</p>
-                </div>
-            </div>
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/mumbai.jpg">
-                </div>
-                <div class="city_title title-white">
-                    <p>Mumbai</p>
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/hill.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Hill Stations</p>
+                        </div>
+                    </div>
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/heritage.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Heritage Destinations</p>
+                        </div>
+                    </div>
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/banglore.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Banglore</p>
+                        </div>
+                    </div>
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/mumbai.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Mumbai</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="destination">
-        <div class="xyz">
-        <div class="div-heading">
-            <span>Handpicked Collections for You</span>
-        </div>
-        <div class="cards">
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/mumbai.jpg">
+        <div class="destination">
+            <div class="xyz">
+                <div class="div-heading">
+                    <span>Handpicked Collections for You</span>
                 </div>
-                <div class="city_title title-white">
-                    <p>Mumbai</p>
-                </div>
-            </div>
+                <div class="cards">
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/mumbai.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Mumbai</p>
+                        </div>
+                    </div>
 
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/delhi.jpg">
-                </div>
-                <div class="city_title title-white">
-                    <p>Delhi</p>
-                </div>
-            </div>
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/banglore.jpg">
-                </div>
-                <div class="city_title title-white">
-                    <p>Banglore</p>
-                </div>
-            </div>
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/banglore.jpg">
-                </div>
-                <div class="city_title title-white">
-                    <p>Banglore</p>
-                </div>
-            </div>
-            <div class="destination-box">
-                <div class="city-img">
-                    <img src="images/mumbai.jpg">
-                </div>
-                <div class="city_title title-white">
-                    <p>Mumbai</p>
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/delhi.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Delhi</p>
+                        </div>
+                    </div>
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/banglore.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Banglore</p>
+                        </div>
+                    </div>
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/banglore.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Banglore</p>
+                        </div>
+                    </div>
+                    <div class="destination-box">
+                        <div class="city-img">
+                            <img src="images/mumbai.jpg">
+                        </div>
+                        <div class="city_title title-white">
+                            <p>Mumbai</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-</section>
-<section class="services">
+    </section>
+    <section class="services" id="services">
         <h1>Our Services</h1>
-    <div class="container">
-        <div class="servicebox">
-            <div class="icon" style="--i:#dda0dd" >
-                <i class="fas fa-cloud-sun-rain"></i>
+        <div class="container">
+            <div class="servicebox">
+                <div class="icon" style="--i:#dda0dd">
+                    <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+                <div class="content">
+                    <h2>Live weather</h2>
+                    <p>We provide live weather and best time to travel.So, don't forget to check it before planning your
+                        trip.</p>
+                </div>
             </div>
-            <div class="content">
-             <h2>Live weather</h2>
-             <p>We provide live weather and best time to travel.So, don't forget to check it before planning your trip.</p>
+            <div class="servicebox">
+                <div class="icon" style="--i:#fd6494">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="content">
+                    <h2>Travel across India</h2>
+                    <p>Travel to any location in India & Our guides will also help you in exploring different places.
+                    </p>
+                </div>
+            </div>
+            <div class="servicebox">
+                <div class="icon" style="--i:#43f390">
+                    <i class="fas fa-rupee-sign"></i>
+                </div>
+                <div class="content">
+                    <h2>Affordable Price</h2>
+                    <p>Customer's happiness is our first priority.That's why we offer large packages at a affordable
+                        price.</p>
+                </div>
+            </div>
+            <div class="servicebox">
+                <div class="icon" style="--i:#ffb508">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="content">
+                    <h2>24/7 support</h2>
+                    <p>We offer 24/7 support to our customers.Visit contact section to get details.</p>
+                </div>
+            </div>
+            <div class="servicebox">
+                <div class="icon" style="--i:#37ba82">
+                    <i class="fas fa-route"></i>
+                </div>
+                <div class="content">
+                    <h2>Best Route</h2>
+                    <p>We will take you to your destination by best route and at affordable price.</p>
+                </div>
+            </div>
+            <div class="servicebox">
+                <div class="icon" style="--i:#cd57ff">
+                    <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+                <div class="content">
+                    <h2>Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
             </div>
         </div>
-        <div class="servicebox">
-            <div class="icon" style="--i:#fd6494">
-                <i class="fas fa-plane"></i>
+    </section>
+    <!------------------------Our Team Section------------------------>
+    <section class="partners" id="team">
+        <h2>Our Team</h2>
+        <div class="team">
+            <div class="cards">
+                <div class="teaminfo">
+                    <div class="membimg">
+                        <img src="images/Sarthak.jpg" alt="">
+                    </div>
+                    <div class="membinfo">
+                        <h4>Sarthak Deshmukh</h4>
+                        <h5>Frontend Developer</h5>
+                    </div>
+                    <div class="profiles">
+                        <a href="https://github.com/SarthakD15"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="content">
-                <h2>Travel across India</h2>
-                <p>Travel to any location in India & Our guides will also help you in exploring different places.</p>
-            </div>
-        </div>
-        <div class="servicebox">
-            <div class="icon" style="--i:#43f390">
-                <i class="fas fa-rupee-sign"></i>
-            </div>
-            <div class="content">
-                <h2>Affordable Price</h2>
-                <p>Customer's happiness is our first priority.That's why we offer large packages at a affordable price.</p>
-            </div>
-        </div>
-        <div class="servicebox">
-            <div class="icon" style="--i:#ffb508">
-                <i class="fas fa-headset"></i>
-            </div>
-            <div class="content">
-                <h2>24/7 support</h2>
-                <p>We offer 24/7 support to our customers.Visit contact section to get details.</p>
-            </div>
-        </div>
-        <div class="servicebox">
-            <div class="icon" style="--i:#37ba82">
-                <i class="fas fa-route"></i>
-            </div>
-            <div class="content">
-                <h2>Best Route</h2>
-                <p>We will take you to your destination by best route and at affordable price.</p>
-            </div>
-        </div>
-        <div class="servicebox">
-            <div class="icon" style="--i:#cd57ff">
-                <i class="fas fa-cloud-sun-rain"></i>
-            </div>
-            <div class="content">
-                <h2>Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-        </div>
 
-    </div>
-</section>
-<!------------------------Our Team Section------------------------>         
-<section class="partners">
-    <h2>Our Team</h2>
-<div class="team">
-    <div class="cards">
-        <div class="teaminfo">
-            <div class="membimg">
-                <img src="images/Sarthak.jpg" alt="">
+            <div class="cards">
+                <div class="teaminfo">
+                    <div class="membimg">
+                        <img src="images/Abhishek2.jpg" alt="">
+                    </div>
+                    <div class="membinfo">
+                        <h4>Abhishek Deokar</h4>
+                        <h5>Frontend Developer</h5>
+                    </div>
+                    <div class="profiles">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="membinfo">
-                <h4>Sarthak Deshmukh</h4>
-                <h5>Frontend Developer</h5>
-            </div>
-            <div class="profiles">
-                <a href="https://github.com/SarthakD15"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
 
-    <div class="cards">
-        <div class="teaminfo">
-            <div class="membimg">
-                <img src="images/Abhishek2.jpg" alt="">
-            </div>
-            <div class="membinfo">
-                <h4>Abhishek Deokar</h4>
-                <h5>Frontend Developer</h5>
-            </div>
-            <div class="profiles">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="cards">
-        <div class="teaminfo">
-            <div class="membimg">
-                <img src="images/Dipankar.jpg" alt="">
-            </div>
-            <div class="membinfo">
-                <h4>Dipankar Dubey</h4>
-                <h5>Frontend Developer</h5>
-            </div>
-            <div class="profiles">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="cards">
+                <div class="teaminfo">
+                    <div class="membimg">
+                        <img src="images/Dipankar.jpg" alt="">
+                    </div>
+                    <div class="membinfo">
+                        <h4>Dipankar Dubey</h4>
+                        <h5>Frontend Developer</h5>
+                    </div>
+                    <div class="profiles">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-</section>
+    </section>
+    <!-------------------------------------------FOOTER SECTION----------------------------->
+    <section class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" />
+                </a>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                    Ex in nulla voluptas ducimus.<br>
+                    beatae animi!
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone-alt">&nbsp; 000-00-000</i></span>
+                    <span><i class="fas fa-envelope">&nbsp; sarthakd1512@gmail.com</i></span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <br>
+                <ul>
+                    <a href="#"> 
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Destinations</li>
+                    </a>
+                    <a href="#">
+                        <li>Our Services</li>
+                    </a>
+                    <a href="#">
+                        <li>Team</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact Us</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Email...">
+                    <textarea name="message" class="text-input contact-input" placeholder="Your message..."style="height:100px"></textarea>
+                    <button type="submit" class="expbutton">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+            <!-- <div class="footer-bottom">
+                &copy; travel.com | Designed by Team SAIT
+            </div> -->
+        </div>
+        <div class="footer-bottom">
+            &copy; travel.com | Designed by Team SAIT
+        </div>
+    </section>
 
 </body>
+
 </html>
